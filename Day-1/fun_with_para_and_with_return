@@ -1,0 +1,11 @@
+
+def mon(x):
+    m=x/30
+    return m
+def year(x):
+    y=x/365
+    return y
+mo=mon(60)
+ye=year(180)
+print("months",mo)
+print("years",ye)

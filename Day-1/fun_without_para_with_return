@@ -1,0 +1,6 @@
+def con():
+    a=40
+    m=a/60
+    return m
+z=con()
+print("no.of months",z)

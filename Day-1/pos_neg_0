@@ -1,0 +1,8 @@
+def check(n):
+    if (n==0):
+       print("zero")
+    elif(n>0):
+      print("pos")
+    else:
+       print("neg")
+check(-34)

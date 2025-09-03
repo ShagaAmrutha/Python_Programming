@@ -1,0 +1,6 @@
+def con(a):
+    print("year",a/365)
+    print("months",a/30)
+
+x=365
+con(x)

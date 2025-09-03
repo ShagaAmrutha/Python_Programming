@@ -1,0 +1,8 @@
+stdNo=input("enter std number")
+Name=input("enter std name")
+m1=int(input("enter marks 1"))
+m2=int(input("enter marks 2"))
+m3=int(input("enter marks 3"))
+tm=(m1+m2+m3)
+avg=round((tm/3),2)
+print(f"std name {Name}\n std num {stdNo}\n total marks{tm}\n avg {avg}")

@@ -1,0 +1,16 @@
+def check(a,b,c):
+    if(a>b):
+        if(a>c):
+            print("a is bigger",a)
+        else:
+            print("c is bigger",c)
+    else:
+        if(b>c):
+            print("b is bigger",b)
+        else:
+            print("c is bigger",c)
+check(20,70,45)
+            
+            
+
+    
