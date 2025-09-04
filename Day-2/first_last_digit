@@ -1,0 +1,8 @@
+n=7391
+first=n
+last=n%10
+while(first>=10):
+    first=first//10
+print("Last digit:", last)
+print("First digit:", first)
+print("Sum =", last + first)

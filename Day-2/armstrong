@@ -1,0 +1,15 @@
+def armstrong(n):
+    temp = n
+    digits = len(str(n))
+    total = 0
+    while temp > 0:
+        d = temp % 10
+        total += d ** digits
+        temp //= 10
+    if total == n:
+        print(n, "is an Armstrong number")
+    else:
+        print(n, "is NOT an Armstrong number")
+
+num = int(input("Enter a number: "))
+armstrong(num)

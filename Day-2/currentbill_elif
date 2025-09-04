@@ -1,0 +1,20 @@
+ConNo=input("enter consumer number ")
+Name=input("enter con name ")
+prev=int(input("enter prev mon reading"))
+curr=int(input("enter curr mon reading"))
+TotUnits=curr-prev
+def calculate_bill(units):
+    bill = 0
+    if units <= 50:
+        bill = units * 3.80
+    elif units <= 100:
+        bill = (50 * 3.80) + (units - 50) * 4.20
+    elif units <= 200:
+        bill = (50 * 3.80) + (50 * 4.20) + (units - 100) * 5.10
+    elif units <= 300:
+        bill = (50 * 3.80) + (50 * 4.20) + (100 * 5.10) + (units - 200) * 6.30
+    else:
+        bill = (50 * 3.80) + (50 * 4.20) + (100 * 5.10) + (100 * 6.30) + (units - 300) * 7.50
+    return bill
+
+print("Total Bill = ₹", calculate_bill(TotUnits))

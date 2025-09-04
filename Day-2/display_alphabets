@@ -1,0 +1,9 @@
+ch = 97
+while ch <= 122:
+    print(chr(ch), end=" ")
+    ch += 1
+print()
+ch = 65
+while ch <= 90:
+    print(chr(ch), end=" ")
+    ch += 1
