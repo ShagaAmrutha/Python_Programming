@@ -1,0 +1,14 @@
+
+list = [45, 32, -65, 90, -3, 52, -43]
+eve=[]
+odd=[]
+for num in list:
+    if(num%2==0):
+        eve.append(num)
+    else:
+        odd.append(num)
+print("Even numbers:", eve)
+print("Count of even numbers:", len(eve))
+print("Odd numbers:", odd)
+print("Count of odd numbers:", len(odd))
+

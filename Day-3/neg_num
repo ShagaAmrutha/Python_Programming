@@ -1,0 +1,7 @@
+
+list=[45,32,-65,90,-3,52,-43]
+for num in list:
+    if(num<0):
+        print(num)
+
+

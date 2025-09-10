@@ -1,0 +1,18 @@
+input=input("enter numbers")
+list=[]
+for x in input.split():
+    list.append(x)
+freq={}
+dup=0
+for ele in list:
+    if ele in freq:
+        freq[ele]+=1
+    else:
+        freq[ele]=1
+for count in freq.values():
+    if count>1:
+        dup += 1
+print(dup)
+
+
+

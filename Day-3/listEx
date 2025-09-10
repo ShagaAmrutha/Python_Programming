@@ -1,0 +1,7 @@
+l = []
+l.append('2')
+l.append('74')
+l.append("hello")
+l.insert(1, "welcome")
+print(l)
+

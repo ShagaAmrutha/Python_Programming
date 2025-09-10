@@ -1,0 +1,5 @@
+def count_words(text):
+    words=text.split()
+    return len(words)
+string="gyd hjhed bjnd ji3e bhbx"
+print(count_words(string))

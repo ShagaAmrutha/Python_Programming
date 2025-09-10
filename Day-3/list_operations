@@ -1,0 +1,16 @@
+list=[]
+list.append("Bag")
+list.append("purse")
+list.append("facewash")
+list.append("shoes")
+list.append("crocks")
+print(list)
+del list[2]
+search_pro= "shoes"
+if search_pro in list:
+    print(f"{search_pro} is in list")
+else:
+     print(f"{search_pro} is not in list")
+for i in list:
+     print(i)
+print("tot no.of products",len(list))

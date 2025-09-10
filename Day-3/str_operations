@@ -1,0 +1,13 @@
+str1=input("enter string")
+str2=input("enter string")
+print("len if str1",len(str1))
+print("len if str2",len(str2))
+if(str1==str2):
+    print("equal")
+elif(str1>str2):
+    print("str1 is big")
+else:
+    print("str 2 is big")
+con=str1+str2
+print(con)
+

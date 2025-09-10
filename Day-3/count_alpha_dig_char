@@ -1,0 +1,16 @@
+
+str1=input("enter string")
+alpha=0
+dig=0
+char=0
+for ch in str1:
+    if(ch.isalpha()):
+        alpha+=1
+    elif(ch.isdigit()):
+        dig+=1
+    else:
+        char+=1
+print("Total alphabets:", alpha)
+print("Total digits:", dig)
+print("Total special characters:",char)
+

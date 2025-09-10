@@ -1,0 +1,17 @@
+
+students=[
+    (1, "Alice", 88),
+    (2, "Bob", 72),
+    (3, "Charlie", 91),
+    (4, "David", 65),
+    (5, "Eve", 78)
+]
+high_score_std=students[0]
+for std in students:
+    if(std[2]>high_score_std[2]):
+        high_score_std=std
+print(f"Student with highest marks: {high_score_std[1]} marks:{high_score_std[2]}")
+print("Students scoring more than 75 marks:")
+for std in students:
+    if std[2] > 75:
+        print(f"{std[1]} (Marks: {std[2]})")

@@ -1,0 +1,15 @@
+s=input("enter string")
+freq={}
+for ch in s:
+    if ch in freq:
+        freq[ch] +=1
+    else:
+        freq[ch]=1
+low_char = s[0]
+low_freq = freq[low_char]
+for ch in freq:
+    if freq[ch]<low_freq:
+        low_freq=freq[ch]
+        low_char=ch
+print("Highest frequency character:", low_char)
+print("Frequency:", low_freq)
