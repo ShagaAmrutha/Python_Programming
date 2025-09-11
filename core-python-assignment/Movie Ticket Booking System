@@ -1,0 +1,25 @@
+def book_seat(booked, seat):
+    if seat in booked:
+        return booked, f"Seat {seat} already booked"
+    booked.append(seat)
+    return booked, f"Seat {seat} booked successfully"
+
+def cancel_seat(booked, seat):
+    if seat in booked:
+        booked.remove(seat)
+        return booked, f"Seat {seat} cancelled"
+    return booked, f"Seat {seat} was not booked"
+
+def available_seats(total, booked):
+    return [seat for seat in range(1, total+1) if seat not in booked]
+
+total_seats = 10
+booked_seats = [2, 5, 7]
+
+booked_seats, msg1 = book_seat(booked_seats, 3)
+print(msg1)
+
+booked_seats, msg2 = cancel_seat(booked_seats, 5)
+print(msg2)
+
+print("Available seats:", available_seats(total_seats,booked_seats))

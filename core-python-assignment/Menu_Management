@@ -1,0 +1,19 @@
+def add_item(menu, item):
+    if item not in menu:
+        menu.append(item)
+    return menu
+
+def remove_item(menu, item):
+    if item in menu:
+        menu.remove(item)
+    return menu
+
+def check_item(menu, item):
+    return f"Availability: '{item}' is available" if item in menu else f"'{item}' not available"
+
+menu = ["Pizza", "Burger", "Pasta", "Salad"]
+menu = add_item(menu, "Tacos")
+menu = remove_item(menu, "Salad")
+
+print("Updated menu:", menu)
+print(check_item(menu,"Pizza"))

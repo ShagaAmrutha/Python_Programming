@@ -1,0 +1,10 @@
+def fare(distance):
+    return 50 + distance * 10
+
+trips = [5, 10, 3]
+total = 0
+for i, d in enumerate(trips, 1):
+    cost = fare(d)
+    print(f"Trip {i}: ${cost}")
+    total += cost
+print(f"Total Fare: ${total}")
