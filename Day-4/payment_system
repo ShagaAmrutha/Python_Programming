@@ -1,0 +1,21 @@
+class payment:
+    def pay(self,amount):
+        pass
+class cashpayment(payment):
+    def pay(self,amount):
+        print(f"paid {amount} in cash")
+class cardpayment(payment):
+    def pay(self,amount):
+        print(f"paid {amount} using card")
+class upipayment(payment):
+    def pay(self,amount):
+        print(f"paid {amount} using UPI")
+
+payments = [cashpayment(), cardpayment(), upipayment()]
+for p in payments:
+    p.pay(1000)
+
+
+
+
+
